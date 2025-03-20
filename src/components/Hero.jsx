@@ -29,7 +29,7 @@ const brands = [
     { name: "Toshiba", img: `${assest.toshiba}` },
     { name: "Samsung", img: `${assest.samsung}` },
     { name: "Google", img: `${assest.google}` },
-    { name: "Realme", img: `${assest.realme}` },
+    { name: "Realme", img: `${assest.Realme}` },
     { name: "Oppo", img: `${assest.oppo}` },
     { name: "Vivo", img: `${assest.vivo}` },
     { name: "Motorola", img: `${assest.motorola}` },

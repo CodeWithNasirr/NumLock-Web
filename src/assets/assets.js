@@ -22,7 +22,7 @@ import microsoft from "./Brand-Logo/microsoft.png"
 import motorola from "./Brand-Logo/motorola.png"
 import msi from "./Brand-Logo/msi.png"
 import oppo from "./Brand-Logo/oppo.png"
-import realme from "./Brand-Logo/realme.png"
+import Realme from "./Brand-Logo/Realme.png"
 import samsung from "./Brand-Logo/samsung.png"
 import toshiba from "./Brand-Logo/toshiba.png"
 import vivo from "./Brand-Logo/vivo.png"
@@ -62,7 +62,7 @@ export const assest={
     motorola,
     msi,
     oppo,
-    realme,
+    Realme,
     samsung,
     toshiba,
     vivo,

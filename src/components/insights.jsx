@@ -20,7 +20,7 @@ const OurInsights = () => {
     assest.motorola,
     assest.msi,
     assest.oppo,
-    assest.realme,
+    assest.Realme,
     assest.samsung,
     assest.toshiba,
     assest.vivo,
