@@ -50,11 +50,12 @@ const ExclusiveStores = () => {
             key={index}
             className="bg-white shadow-md py-4 rounded-lg flex flex-col items-center"
           >
-            <img
+            {/* <img
             //   src={store.imgSrc}
               alt={store.title}
               className="w-full h-40 object-cover rounded-md mb-4"
-            />
+            /> */}
+            <h1>IMAGES Uploded Coming Soon</h1>
             <h4 className="sm:text-lg  font-semibold mb-2">{store.title}</h4>
             <Link
               to={store.mapLink}
