@@ -3,40 +3,40 @@ import { MapPin,PhoneCall } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom'
 const stores = [
   {
-    title: "Registered Address",
+    title: "Shop1",
     imgSrc: "images/locations/4.jpeg",
     address:
-      "Plot No-124, Saheed Nagar, Near Alok Bharati Tower, Bhubaneswar-751007",
-    mapLink: "https://maps.app.goo.gl/meSU1BxEoh9ZEsvY6",
-    phone: "+91 7788008899",
-    phoneLink: "tel:7788008899",
+      "Plot No-xxx, Saheed Nagar, Near Saheed Nagar, Bhubaneswar-751007",
+    mapLink: "#",
+    phone: "+91 999999999999",
+    phoneLink: "tel:999999999999",
   },
   {
-    title: "Corporate Address",
+    title: "Shop2",
     imgSrc: "images/locations/3.jpeg",
     address:
-      "Plot No.772, 1st Floor, Infront of Maharshi College, Saheed Nagar, Bhubaneswar-751007",
-    mapLink: "https://goo.gl/maps/1jWdUKVdMTGoasiv6",
-    phone: "+91 7788997788",
-    phoneLink: "tel:7788997788",
+      "Plot No-xxx, Saheed Nagar, Near Saheed Nagar, Bhubaneswar-751007",
+    mapLink: "#",
+    phone: "+91 999999999999",
+    phoneLink: "tel:999999999999",
   },
   {
-    title: "Mobile Service Center",
+    title: "Shop3",
     imgSrc: "images/locations/12.png",
     address:
-      "Plot No.772, Infront of Maharshi College gate, Near BMC Bhawani Mall, Saheed Nagar, Bhubaneswar-751007",
-    mapLink: "https://goo.gl/maps/LR7wqzdBUM5aA37c9",
-    phone: "+91 7788006677",
-    phoneLink: "tel:7788006677",
+      "Plot No-xxx, Saheed Nagar, Near Saheed Nagar, Bhubaneswar-751007",
+    mapLink: "#",
+    phone: "+91 999999999999",
+    phoneLink: "tel:999999999999",
   },
   {
-    title: "Showroom Address",
+    title: "Shop4",
     imgSrc: "images/locations/13.png",
     address:
-      "Plot No-435/1866, 1st Floor, Near KIIT Square, Beside Sky Automobiles, Patia, Bhubaneswar-751024",
-    mapLink: "https://maps.app.goo.gl/TGVd1wRxsMvpvy6AA",
-    phone: "+91 7788007799",
-    phoneLink: "tel:7788007799",
+      "Plot No-xxx, Saheed Nagar, Near Saheed Nagar, Bhubaneswar-751007",
+    mapLink: "#",
+    phone: "+91 999999999999",
+    phoneLink: "tel:999999999999",
   },
 ];
 
