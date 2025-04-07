@@ -12,11 +12,11 @@ const Navbar = () => {
         <div className='flex sticky top-0 z-50 items-center justify-between py-5 font-medium bg-zinc-50  border border-gray-100'>
             <Link to='/' className="prata-regular text:1xl sm:py-3 px-5 leading-relaxed text-amber-700">NUMLOCKITSOLUTIONS</Link>
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
-                <NavLink to="/Home" className='flex flex-col items-center gap-1'>
+                <NavLink to="/home" className='flex flex-col items-center gap-1'>
                     <p>HOME</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
-                <NavLink to='/About' className='flex flex-col items-center gap-1'>
+                <NavLink to='/about' className='flex flex-col items-center gap-1'>
                     <p>ABOUT US</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <p>WHY WE</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
-                <NavLink to='/Fawq' className='flex flex-col items-center gap-1'>
+                <NavLink to='/Faq' className='flex flex-col items-center gap-1'>
                     <p>FAQ</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <p>WHY WE</p>
                    
                 </NavLink>
-                <NavLink to='/Fawq' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                <NavLink to='/Faq' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>FAQ</p>
                 </NavLink>
                 <NavLink to='/contact' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>

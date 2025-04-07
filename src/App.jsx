@@ -3,27 +3,31 @@ import React from 'react'
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
-import Slider from './components/slider';
+import Landing_Page from './pages/Landing_Page';
 import 'react-toastify/dist/ReactToastify.css';
-import Hero from './components/Hero';
-import RepairGadgets from './components/steps';
-import WhyChooseUs from './components/Trust_Us';
-import OurInsights from './components/insights';
-import ExclusiveStores from './components/stores';
-import Testimonials from './components/testimonials';
+import AboutUs from './pages/About';
+import FAQAccordion from './pages/FAQ';
 import Footer from './components/footer';
+import WhyChoose from './pages/Why';
+import ContactUs from './pages/contact';
+import ScrollToTop from './components/ScrollToTop';
+import PrivacyPolicy from './pages/Policy';
 const App = () => {
   return (
     <div className='relative md:px-[7vw] lg:px-[9vw]'>
       <ToastContainer />
       <Navbar />
-      <Slider/>
-      <Hero/>
-      <RepairGadgets/>
-      <WhyChooseUs/>
-      <Testimonials/> 
-      <OurInsights/>
-      <ExclusiveStores/>
+      <ScrollToTop />
+      <Routes>
+      <Route path='/' element={<Landing_Page/>}/>
+      <Route path='/home' element={<Landing_Page/>}/>
+      <Route path='/about' element={<AboutUs/>}/>
+      <Route path='/Faq' element={<FAQAccordion/>}/>
+      <Route path='/Why' element={<WhyChoose/>}/>
+      <Route path='/contact' element={<ContactUs/>}/>
+      <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+
+      </Routes>
       <Footer/>      
     </div>
   )

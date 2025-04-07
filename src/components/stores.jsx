@@ -50,26 +50,26 @@ const ExclusiveStores = () => {
             key={index}
             className="bg-white shadow-md py-4 rounded-lg flex flex-col items-center"
           >
-            {/* <img
+            <img
             //   src={store.imgSrc}
               alt={store.title}
               className="w-full h-40 object-cover rounded-md mb-4"
-            /> */}
-            <h1>IMAGES Uploded Coming Soon</h1>
+            />
+            
             <h4 className="sm:text-lg  font-semibold mb-2">{store.title}</h4>
             <Link
               to={store.mapLink}
-              className="text-gray-600 mb-2 text-center"
+              className="text-sm text-gray-600 mb-2 sm:text-xl text-center"
             >
               {store.address}
             </Link>
-            <Link to={store.phoneLink} className="text-blue-600 mb-4 flex ">
-                <PhoneCall className="mx-2" />
+            <Link to={store.phoneLink} className="text-sm text-blue-600 sm:text-md mb-4 flex ">
+                <PhoneCall className="" />
               {store.phone}
             </Link>
             <Link
               to={store.mapLink}
-              className="px-4 py-2 flex bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+              className="py-2 px-2 flex bg-blue-600 text-sm text-white rounded-md hover:bg-blue-700 transition"
             >
               Get Direction<MapPin/>
             </Link>

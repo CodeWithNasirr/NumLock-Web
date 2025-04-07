@@ -1,7 +1,17 @@
 import React from "react";
 import { FaWhatsapp, FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaAngleRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const  Useful_Links = [
+    { name: "Home", path: "/home" },
+    { name: "About us", path: "/about" },
+    { name: "Contact us", path: "/contact" },
+    { name: "FAQ", path: "/Faq" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Pay Online", path: "/pay-online" },
+  ];
+
   return (
     <>
     <footer className="bg-zinc-50 text-gray-800 py-8 relative">
@@ -22,7 +32,7 @@ const Footer = () => {
           <p>Plot No-xxx, Saheed Nagar, Near xxxx, Bhubaneswar-751007</p>
           <p><strong>Mobile:</strong> +91 99999999999</p>
           <p><strong>Alt Mobile:</strong> +91 99999999999</p>
-          <p><strong>Email:</strong> skofficial665@gmail.com</p>
+          <p><strong>Email:</strong>support@numlockitsolutions.co.in</p>
           <div className="flex space-x-4 mt-4">
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={20} className="hover:text-blue-500 transition duration-300" />
@@ -43,12 +53,15 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Useful Links</h3>
           <ul className="space-y-2">
-            {["Home", "About us", "Contact us", "FAQ", "Privacy Policy", "Pay Online"].map((link, index) => (
-              <li key={index} className="flex items-center">
+           {Useful_Links.map((link,index)=>(
+          <li key={index} className="flex items-center">
                 <FaAngleRight className="mr-2 text-gray-400" />
-                <a href="#" className="hover:text-gray-400 transition duration-300">{link}</a>
+                {/* <a href={link.path}>{link.name}</a> */}
+               <Link to={link.path} className="hover:text-gray-400 transition duration-300">
+               {link.name}
+               </Link>
               </li>
-            ))}
+           ))}    
           </ul>
         </div>
 
@@ -89,9 +102,10 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    <p className="text-center text-gray-900 py-4">
-        © All Rights Reserved Numlock Technology. 
-      </p>
+    <div className="container mx-auto px-4 text-center bg-blue-800 text-white py-3 shadow-inner">
+          <p className="text-sm">© {new Date().getFullYear()} Numlock IT Solutions. All rights reserved.</p>
+          <p className="mt-2 italic text-gray-300">Crafted with care by Nasir ✍️</p>
+    </div>
     </>
   );
 };
