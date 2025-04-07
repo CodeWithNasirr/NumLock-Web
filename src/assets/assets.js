@@ -11,6 +11,7 @@ import tab_repair from './tab_repair.png'
 import projector from './projector.png'
 
 // Brand logo
+import Numlock from "./Numlock.svg"
 import acer from "./Brand-Logo/acer.png"
 import apple from "./Brand-Logo/apple.png"
 import asus from "./Brand-Logo/asus.png"
@@ -39,6 +40,7 @@ import nothing from "./Brand-Logo/nothing.png"
 import repair_img from "./repair_img.jpeg"
 
 export const assest={
+    Numlock,
     repair_img,
     projector,
     iphone,

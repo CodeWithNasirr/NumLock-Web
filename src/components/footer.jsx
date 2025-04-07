@@ -1,6 +1,8 @@
 import React from "react";
 import { FaWhatsapp, FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaAngleRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { assest } from "../assets/assets";
+
 
 const Footer = () => {
   const  Useful_Links = [
@@ -28,7 +30,7 @@ const Footer = () => {
       <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         {/* Contact Info */}
         <div className="space-y-4">
-          <img src="images/logo.png" alt="logo" className="w-32 mb-3" />
+          <img src={assest.Numlock} alt="logo" className="w-32 mb-3" />
           <p>Plot No-xxx, Saheed Nagar, Near xxxx, Bhubaneswar-751007</p>
           <p><strong>Mobile:</strong> +91 99999999999</p>
           <p><strong>Alt Mobile:</strong> +91 99999999999</p>

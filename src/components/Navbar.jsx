@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaWhatsapp  } from "react-icons/fa";
 import { ChevronLeft} from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom'
 import { Context } from "../context/Context";
+import { assest } from "../assets/assets";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -10,7 +11,8 @@ const Navbar = () => {
 
     return (
         <div className='flex sticky top-0 z-50 items-center justify-between py-5 font-medium bg-zinc-50  border border-gray-100'>
-            <Link to='/' className="prata-regular text:1xl sm:py-3 px-5 leading-relaxed text-amber-700">NUMLOCKITSOLUTIONS</Link>
+            <img src={assest.Numlock} alt="logo" className="w-40 mb-3 px-2" />
+            {/* <Link to='/' className="prata-regular text:1xl sm:py-3 px-5 leading-relaxed text-amber-700">NUMLOCKITSOLUTIONS</Link> */}
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
                 <NavLink to="/home" className='flex flex-col items-center gap-1'>
                     <p>HOME</p>
@@ -33,7 +35,7 @@ const Navbar = () => {
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
             </ul>
-            <NavLink to='support' className="hidden sm:flex flex-row justify-end gap-1 border px-5 py-2 rounded-full">
+            <NavLink to='https://wa.link/akoflv' className="hidden sm:flex flex-row justify-end gap-1 border px-5 py-2 rounded-full">
             <p>SUPPORT</p>
             <FaWhatsapp size={20} color="green"/>
             </NavLink>
@@ -80,7 +82,7 @@ const Navbar = () => {
                     <p>CONTACT US</p>
                   
                 </NavLink>
-                <NavLink to='support' className="flex flex-row items-center justify-center gap-1" onClick={() => setVisble(false)}>
+                <NavLink to='https://wa.link/akoflv' className="flex flex-row items-center justify-center gap-1" onClick={() => setVisble(false)}>
                     <p>SUPPORT</p>
                     <FaWhatsapp size={20} color="green"/>
 
