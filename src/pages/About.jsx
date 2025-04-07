@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="mb-12">
         <h3 className="text-2xl font-semibold mb-4 text-blue-600">Our Profile</h3>
         <p className="leading-7 text-gray-700">
-          COMPSENSE was established in 2003 with a mission to provide premium laptop, Apple device, and smartphone repair services across Odisha. 
+          Numlockitsolutions was established in 2003 with a mission to provide premium laptop, Apple device, and smartphone repair services across Odisha. 
           We're known for quality repair services, data recovery, and IT hardware sales such as laptops, printers, CCTVs, and more.
           We partner with top brands like Apple, Dell, HP, Lenovo, and Acer to deliver trustworthy services with a smile.
         </p>
