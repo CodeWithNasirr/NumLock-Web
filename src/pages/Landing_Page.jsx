@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from '../components/Slider';
+import Slider from '../components/slider';
 import Hero from '../components/Hero';
 import RepairGadgets from '../components/steps';
 import WhyChooseUs from '../components/Trust_Us';
