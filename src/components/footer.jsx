@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="flex space-x-4 mt-4">
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={20} className="hover:text-blue-500 transition duration-300" />
-            </a>
+            </a> 
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={20} className="hover:text-red-500 transition duration-300" />
             </a>

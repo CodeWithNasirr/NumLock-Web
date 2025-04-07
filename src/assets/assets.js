@@ -11,7 +11,7 @@ import tab_repair from './tab_repair.png'
 import projector from './projector.png'
 
 // Brand logo
-import Numlock from "./Numlock.svg"
+import Numlock from "./Numlock.png"
 import acer from "./Brand-Logo/acer.png"
 import apple from "./Brand-Logo/apple.png"
 import asus from "./Brand-Logo/asus.png"
