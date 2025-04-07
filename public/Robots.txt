@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://numlockitsolutions.co.in/sitemap.xml
