@@ -57,11 +57,11 @@ const ContactUs = () => {
           <div className="bg-gray-50 p-8 rounded-2xl shadow-md space-y-8">
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
-              <p className="text-gray-600">123 Laptop Lane, Tech City, 560001</p>
+              <p className="text-gray-600">Street - 8, Front Lane of Hotel Empire, Plot No - 228, EPF Colony, E-Block, Saheed Nagar, Bhubaneswar, Odisha 751007</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
-              <p className="text-gray-600">+91 XXXXXXXXXXXX</p>
+              <p className="text-gray-600">+91 9439940725</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>

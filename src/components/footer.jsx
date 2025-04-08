@@ -31,9 +31,9 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="space-y-4">
           <img src={assest.Numlock} alt="logo" className="w-32 mb-3" />
-          <p>Plot No-xxx, Saheed Nagar, Near xxxx, Bhubaneswar-751007</p>
-          <p><strong>Mobile:</strong> +91 99999999999</p>
-          <p><strong>Alt Mobile:</strong> +91 99999999999</p>
+          <p>Street - 8, Front Lane of Hotel Empire, Plot No - 228, EPF Colony, E-Block, Saheed Nagar, Bhubaneswar, Odisha 751007</p>
+          <p><strong>Mobile:</strong> +91 9439940725</p>
+          <p><strong>Alt Mobile:</strong> +91 9439940725 </p>
           <p><strong>Email:</strong>support@numlockitsolutions.co.in</p>
           <div className="flex space-x-4 mt-4">
             <a href="" target="_blank" rel="noopener noreferrer">
