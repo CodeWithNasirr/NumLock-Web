@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-2xl font-semibold text-blue-800">Contact Us</h2>
           <p className="text-gray-700">
-            If you have any questions about this policy, feel free to contact us at <span className="font-medium text-blue-800">info@numlockitsolutions.com</span>.
+            If you have any questions about this policy, feel free to contact us at <span className="font-medium text-blue-800">support@numlockitsolutions.com</span>.
           </p>
         </section>
       </main>

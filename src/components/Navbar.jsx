@@ -35,10 +35,13 @@ const Navbar = () => {
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
             </ul>
-            <NavLink to='https://wa.link/akoflv' className="hidden sm:flex flex-row justify-end gap-1 border px-5 py-2 rounded-full">
+            <div className="right hidden sm:flex flex-row gap-3">
+            <NavLink to='https://wa.link/akoflv' className="hidden sm:flex flex-row gap-1 hover:bg-green-500 hover:text-white border px-5 py-2 rounded-full">
             <p>SUPPORT</p>
             <FaWhatsapp size={20} color="green"/>
             </NavLink>
+            <NavLink to={"/login"} className="rounded-full bg-indigo-600 hover:bg-indigo-500 px-8 py-2 text-white shadow-sm">Login</NavLink>
+            </div>
 
           
             
@@ -67,6 +70,7 @@ const Navbar = () => {
                     <NavLink to="/Home" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>HOME</p>
                 </NavLink>
+                    
                 <NavLink to='/About' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>ABOUT US</p>
    
@@ -86,6 +90,9 @@ const Navbar = () => {
                     <p>SUPPORT</p>
                     <FaWhatsapp size={20} color="green"/>
 
+                </NavLink>
+                <NavLink to="/Home" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                    <p>LOGIN</p>
                 </NavLink>
                 </div>
             </div>
