@@ -18,14 +18,14 @@ const Footer = () => {
     <>
     <footer className="bg-zinc-50 text-gray-800 py-8 relative">
       {/* WhatsApp Floating Button */}
-      {/* <a
-        href="https://api.whatsapp.com/send?phone=+917788007788&text=Hi,%20Technical%20Support%20Requested"
+      <a
+        href="https://wa.link/akoflv"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
       >
-        <FaWhatsapp size={24} />
-      </a> */}
+        <FaWhatsapp size={35} />
+      </a>
 
       <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         {/* Contact Info */}
