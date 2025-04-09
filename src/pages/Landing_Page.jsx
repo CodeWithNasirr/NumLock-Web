@@ -17,12 +17,12 @@ function Landing_Page() {
         <meta name="keywords" content="laptop service, NumLock IT Solutions, laptop repair, computer service, IT support" />
         <meta property="og:title" content="NumLock IT Solutions - Laptop Service Center" />
         <meta property="og:description" content="Professional laptop repair services you can trust. Book today!" />
-        <meta property="og:image" content="https://numlockitsolutions.co.in/assets/Numlock-CYus4VHR.png" />
+        <meta property="og:image" content="https://numlockitsolutions.co.in/numlock1.png" />
         <meta property="og:url" content="https://numlockitsolutions.co.in/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="NumLock IT Solutions - Laptop Service Center" />
         <meta name="twitter:description" content="Professional laptop repair services you can trust. Book today!" />
-        <meta name="twitter:image" content="https://numlockitsolutions.co.in/assets/Numlock-CYus4VHR.png" />
+        <meta name="twitter:image" content="https://numlockitsolutions.co.in/numlock1.png" />
       </Helmet>
       <Slider/>
       <Hero/>
