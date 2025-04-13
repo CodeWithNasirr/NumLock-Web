@@ -91,7 +91,7 @@ const Navbar = () => {
                     <FaWhatsapp size={20} color="green"/>
 
                 </NavLink>
-                <NavLink to="/Home" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                <NavLink to="/Login" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>LOGIN</p>
                 </NavLink>
                 </div>
