@@ -7,14 +7,15 @@ import OurInsights from '../components/insights';
 import ExclusiveStores from '../components/stores';
 import Testimonials from '../components/testimonials';
 import { Helmet } from 'react-helmet-async'
+import SEOAccordion from './SeoAordion';
 function Landing_Page() {
   return (
     <div>
        {/* SEO Meta Tags */}
        <Helmet>
-        <title>NumLock IT Solutions - Best Laptop Service Center</title>
-        <meta name="description" content="Fast, reliable laptop repair services at NumLock IT Solutions. Book now!" />
-        <meta name="keywords" content="laptop service, NumLock IT Solutions, laptop repair, computer service, IT support" />
+        <title>Laptop Repair in Bhubaneswar | NumLock IT Solutions 💻 Fast Service</title>
+        <meta name="description" content="Need urgent laptop repair in Bhubaneswar? NumLock IT Solutions offers fast, reliable service for Dell, HP, Apple, Lenovo & more. Call now!" />
+        <meta name="keywords" content="laptop service, NumLock IT Solutions, laptop repair, computer service, IT support,Best laptop repair service in bhubaneswar by Numlock IT Solutions. Apple, Dell, HP, Lenovo, Acer,Laptop repairing near me,Laptop repair center near me,Laptop service center near me.Apple, Dell, HP, Lenovo, Acer,Laptop repairing near me,Laptop repair center near me,Laptop service center near me." />
         <meta property="og:title" content="NumLock IT Solutions - Laptop Service Center" />
         <meta property="og:description" content="Professional laptop repair services you can trust. Book today!" />
         <meta property="og:image" content="https://numlockitsolutions.co.in/numlock1.png" />
@@ -26,11 +27,13 @@ function Landing_Page() {
       </Helmet>
       <Slider/>
       <Hero/>
+      
       <RepairGadgets/>
       <WhyChooseUs/>
       <Testimonials/> 
       <OurInsights/>
       <ExclusiveStores/>
+      <SEOAccordion/>
     </div>
   )
 }
