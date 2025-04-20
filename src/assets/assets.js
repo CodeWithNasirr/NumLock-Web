@@ -44,7 +44,7 @@ export const assest={
     numlock1,
     Numlock,
     repair_img,
-    projector,
+    projector, 
     iphone,
     data_recovery,
     ipad,

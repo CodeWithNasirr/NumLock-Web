@@ -12,6 +12,12 @@ import WhyChoose from './pages/Why';
 import ContactUs from './pages/contact';
 import ScrollToTop from './components/ScrollToTop';
 import PrivacyPolicy from './pages/Policy';
+import DellLaptopService from './brand_pages/DellLaptopService';
+import LaptopServiceCenter from './pages/LaptopServiceCenter';
+import HpLaptopServiceCenter from './brand_pages/HpLaptopServiceCenter';
+import LenovoLaptopService from './brand_pages/LenovoLaptopService';
+import AppleLaptopService from './brand_pages/AppleLaptopService';
+import AcerLaptopService from './brand_pages/AcerLaptopService';
 const App = () => {
   return (
     <div className='relative md:px-[7vw] lg:px-[9vw]'>
@@ -26,6 +32,15 @@ const App = () => {
       <Route path='/Why' element={<WhyChoose/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+      <Route path='/laptop-repair' element={<LaptopServiceCenter/>}/>
+      {/* laptop services... here */}
+      <Route path='/Dell-laptop-service' element={<DellLaptopService/>}/>
+      <Route path='/Hp-laptop-service' element={<HpLaptopServiceCenter/>}/>
+      <Route path='/Lenovo-laptop-service' element={<LenovoLaptopService/>}/>
+      <Route path='/Apple-laptop-service' element={<AppleLaptopService/>}/>
+      <Route path='/Acer-laptop-service' element={<AcerLaptopService/>}/>
+
+
 
       </Routes>
       <Footer/>      

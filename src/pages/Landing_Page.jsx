@@ -8,9 +8,11 @@ import ExclusiveStores from '../components/stores';
 import Testimonials from '../components/testimonials';
 import { Helmet } from 'react-helmet-async'
 import SEOAccordion from './SeoAordion';
+import FeaturedCourses from '../components/FeaturedCourses';
 function Landing_Page() {
   return (
     <div>
+      <SEOAccordion/>
        {/* SEO Meta Tags */}
        <Helmet>
         <title>Laptop Repair in Bhubaneswar | NumLock IT Solutions 💻 Fast Service</title>
@@ -26,14 +28,14 @@ function Landing_Page() {
         <meta name="twitter:image" content="https://numlockitsolutions.co.in/numlock1.png" />
       </Helmet>
       <Slider/>
-      <Hero/>
-      
+      <FeaturedCourses/>
+      {/* <Hero/> */}
       <RepairGadgets/>
       <WhyChooseUs/>
       <Testimonials/> 
       <OurInsights/>
       <ExclusiveStores/>
-      <SEOAccordion/>
+      
     </div>
   )
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-
+import SEOAccordion from './SeoAordion';
 const ContactUs = () => {
   return (
     <section className="bg-white py-16 px-4 lg:px-32">
+      <SEOAccordion/>
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
@@ -103,8 +104,7 @@ const ContactUs = () => {
         </a>
       </div>
     </div>
-
-
+    
     </section>
     
   );

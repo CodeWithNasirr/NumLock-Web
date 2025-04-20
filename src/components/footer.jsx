@@ -11,8 +11,21 @@ const Footer = () => {
     { name: "Contact us", path: "/contact" },
     { name: "FAQ", path: "/Faq" },
     { name: "Privacy Policy", path: "/privacy-policy" },
-    { name: "Pay Online", path: "/pay-online" },
   ];
+  const Our_Services = [
+    { name: "Laptop Repairing", path: "/laptop-repair" },
+    { name: "Data Recovery", path: "/" },
+    { name: "Laptop/Desktop Refurbished", path: "/" },
+    { name: "Apple Device Repairing", path: "/" },
+    { name: "Projector Repairing", path: "/" },
+    { name: "Printer Repairing", path: "/" },
+  ]
+  const Our_Locations =[
+    {name:"Bhubaneswar",path:"/"},
+    {name:"Puri",path:"/"},
+    {name:"Jajpur Road",path:"/"},
+    {name:"Cuttack",path:"/"},
+  ]
 
   return (
     <>
@@ -36,18 +49,18 @@ const Footer = () => {
           <p><strong>Alt Mobile:</strong> +91 9439940725 </p>
           <p><strong>Email:</strong>support@numlockitsolutions.co.in</p>
           <div className="flex space-x-4 mt-4">
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <Link to="" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={20} className="hover:text-blue-500 transition duration-300" />
-            </a> 
-            <a href="" target="_blank" rel="noopener noreferrer">
+            </Link> 
+            <Link to="" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={20} className="hover:text-red-500 transition duration-300" />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={20} className="hover:text-pink-500 transition duration-300" />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={20} className="hover:text-blue-400 transition duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -71,19 +84,14 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Our Services</h3>
           <ul className="space-y-2">
-            {[
-              "Mobile/Tablet Repairing",
-              "Laptop Repairing",
-              "Data Recovery",
-              "Laptop/Desktop Refurbished",
-              "Apple Device Repairing",
-              "Projector Repairing",
-              "Printer Repairing"
-            ].map((service, index) => (
-              <li key={index} className="flex items-center">
-                <FaAngleRight className="mr-2 text-gray-400" />
-                <a href="#" className="hover:text-gray-400 transition duration-300">{service}</a>
-              </li>
+            {Our_Services.map((service,index)=>(
+               <li key={index} className="flex items-center">
+               <FaAngleRight className="mr-2 text-gray-400" />
+               <Link to={service.path} className="hover:text-gray-400 transition duration-300">
+                {service.name}
+              </Link>
+             </li>
+
             ))}
           </ul>
         </div>
@@ -92,14 +100,13 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Our Locations</h3>
           <ul className="space-y-2">
-            {[
-              "Bhubaneswar", "Puri","Jajpur Road", "Cuttack" 
-            ].map((location, index) => (
-              <li key={index} className="flex items-center">
-                <FaAngleRight className="mr-2 text-gray-400" />
-                <a href="#" className="hover:text-gray-400 transition duration-300">{location}</a>
-              </li>
+            {Our_Locations.map((location,index)=>(
+            <li key={index} className="flex items-center">
+            <FaAngleRight className="mr-2 text-gray-400" />
+            <Link to={location.path} className="hover:text-gray-400 transition duration-300">{location.name}</Link>
+            </li>
             ))}
+          
           </ul>
         </div>
       </div>

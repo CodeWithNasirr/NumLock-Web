@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import SEOAccordion from './SeoAordion';
 const faqs = [
     {
       question: 'What types of laptop issues do you repair?',
@@ -52,6 +52,7 @@ function FAQAccordion() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-4">
+      <SEOAccordion/>
       <h2 className="text-2xl font-bold text-center mb-6 text-amber-700">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="border border-gray-300 rounded-xl px-4 py-3 overflow-hidden shadow-sm transition-all">
@@ -78,6 +79,7 @@ function FAQAccordion() {
           </div>
         </div>
       ))}
+    
     </div>
   );
 }
