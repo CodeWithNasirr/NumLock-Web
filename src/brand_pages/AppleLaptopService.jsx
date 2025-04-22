@@ -9,6 +9,10 @@ export default function AppleLaptopService() {
           name="description"
           content="Need Apple laptop repair in Bhubaneswar? Numlock IT Solutions offers MacBook screen, battery, and motherboard repair with genuine Apple parts."
         />
+         <meta
+          name="keywords"
+          content="Apple Laptop Service Center in Bhubaneswar, Apple laptop repair Bhubaneswar, Apple service near me, Apple motherboard repair, Apple screen replacement, Numlock IT Solutions"
+        />
       </Helmet>
 
       <div className=" text-amber-700 rounded-2xl p-6 shadow-lg text-center">

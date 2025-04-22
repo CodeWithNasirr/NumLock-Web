@@ -10,6 +10,10 @@ const DellLaptopService = () => {
           name="description"
           content="Looking for a reliable Dell Laptop Service Center in Bhubaneswar? Numlock IT Solutions offers expert Dell repairs, genuine parts & quick service."
         />
+         <meta
+          name="keywords"
+          content="Dell Laptop Service Center in Bhubaneswar, Dell laptop repair Bhubaneswar, Dell service near me, Dell motherboard repair, Dell screen replacement, Numlock IT Solutions"
+        />
       </Helmet>
 
       <section className="text-center mb-10">
@@ -59,13 +63,13 @@ const DellLaptopService = () => {
           <li>Fan, Speaker, and Hinge Repair</li>
         </ul>
 
-        <div className="pt-8">
+        {/* <div className="pt-8">
           <img
             src="/images/laptop-repair.png"
             alt="Dell Laptop Repair"
             className="rounded-xl shadow-md w-full max-w-3xl mx-auto"
           />
-        </div>
+        </div> */}
 
         <h2 className="text-2xl font-semibold text-gray-800 pt-10 text-center">
           Book Your Dell Laptop Repair Today!

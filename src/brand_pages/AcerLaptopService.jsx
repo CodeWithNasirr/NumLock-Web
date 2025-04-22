@@ -2,46 +2,65 @@ import { Helmet } from "react-helmet";
 
 export default function AcerLaptopService() {
   return (
-    <div className="px-4 py-8 md:px-20 max-w-7xl mx-auto">
+    <div className="container mx-auto px-4 py-10 ">
       <Helmet>
         <title>Acer Laptop Service Center in Bhubaneswar | Numlock IT Solutions</title>
         <meta
           name="description"
           content="Need an Acer Laptop Service Center in Bhubaneswar? Numlock IT Solutions provides expert Acer laptop repairs, genuine parts & prompt service by certified technicians."
         />
+        <meta
+          name="keywords"
+          content="Acer laptop service center Bhubaneswar, Acer repair near me, Acer battery replacement, Acer screen repair, Numlock IT Solutions"
+        />
       </Helmet>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-amber-700 mb-6 text-center">
-        Acer Laptop Service Center in Bhubaneswar
-      </h1>
+      <div className="bg-white shadow-lg rounded-2xl p-6">
+        <h1 className="text-3xl font-bold text-amber-700 mb-4 text-center">
+          Acer Laptop Service Center in Bhubaneswar
+        </h1>
 
-      <p className="mb-4 text-gray-700">
-        Numlock IT Solutions is a trusted name when it comes to Acer laptop repair and maintenance in Bhubaneswar. Our dedicated service center offers professional repair solutions for all Acer laptop models, ensuring efficient and reliable service.
-      </p>
+        <p className="text-gray-700 mb-4">
+          Looking for a trusted <strong>Acer laptop service center in Bhubaneswar</strong>? At <strong>Numlock IT Solutions</strong>, we specialize in professional Acer laptop repairs, maintenance, and upgrades. Whether it's a software glitch, screen damage, power issue, or hardware failure, our certified technicians provide reliable and affordable solutions using genuine Acer parts.
+        </p>
 
-      <p className="mb-4 text-gray-700">
-        From fixing motherboard issues to replacing damaged screens, keyboards, and batteries — we specialize in handling both hardware and software problems for Acer Aspire, Swift, Spin, Nitro, and Predator series. We only use genuine Acer spare parts to maintain your laptop's performance and durability.
-      </p>
+        <p className="text-gray-700 mb-4">
+          Our team is equipped with advanced tools and years of experience in handling a wide range of Acer models, including Aspire, Nitro, Swift, Predator, and more. We prioritize quick turnaround and customer satisfaction in every service we deliver.
+        </p>
 
-      <p className="mb-4 text-gray-700">
-        Our certified engineers diagnose and resolve issues with precision and aim to return your laptop within 24 hours. With a customer-first approach and a track record of quick turnarounds, Numlock IT Solutions has become one of the most preferred Acer service centers in the region.
-      </p>
+        <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-2">
+          Why Choose Numlock IT Solutions for Acer Repairs?
+        </h2>
+        <ul className="list-disc ml-6 text-gray-700 space-y-2">
+          <li>Certified technicians with in-depth Acer knowledge</li>
+          <li>Original Acer spare parts for repairs and replacements</li>
+          <li>Fast diagnostics and same-day service availability</li>
+          <li>Affordable pricing with warranty on parts</li>
+          <li>Free consultation and pickup/drop within Bhubaneswar</li>
+        </ul>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
-        Why Choose Our Acer Laptop Repair Services?
-      </h2>
-      <ul className="list-disc ml-6 text-gray-700 space-y-2">
-        <li>Expert Technicians with Acer Repair Experience</li>
-        <li>Only Genuine Acer Parts Used</li>
-        <li>Same-Day Diagnostics & Fast Turnaround</li>
-        <li>Support for Acer Aspire, Swift, Spin, Nitro, and More</li>
-        <li>Affordable Pricing with Transparent Quotes</li>
-        <li>Located in Bhubaneswar – Easy Access</li>
-      </ul>
+        <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-2">
+          Common Acer Laptop Issues We Fix:
+        </h2>
+        <ul className="list-disc ml-6 text-gray-700 space-y-2">
+          <li>Broken screen or display flickering</li>
+          <li>Battery draining or charging problems</li>
+          <li>Keyboard not working or liquid damage</li>
+          <li>Overheating, booting errors, or blue screen issues</li>
+          <li>Slow performance, software installation, and data recovery</li>
+        </ul>
 
-      <p className="mt-6 text-gray-700">
-        If you're facing issues like slow performance, overheating, display flickering, or boot errors on your Acer laptop, bring it to Numlock IT Solutions today. We provide reliable and professional Acer laptop repair in Bhubaneswar to help you get back on track.
-      </p>
+        <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-2">
+          Our Clients Trust Us
+        </h2>
+        <p className="text-gray-700 mb-4">
+          We serve students, working professionals, and businesses across Bhubaneswar. Our transparent pricing, quality assurance, and excellent post-repair support have made us a preferred choice for Acer laptop servicing in the city.
+        </p>
+
+        <p className="text-gray-700 font-medium">
+          📞 Contact Numlock IT Solutions today to schedule your Acer laptop repair. Experience quick service and quality care for your device!
+        </p>
+      </div>
     </div>
   );
 }

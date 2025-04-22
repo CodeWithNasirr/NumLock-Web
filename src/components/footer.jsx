@@ -14,11 +14,11 @@ const Footer = () => {
   ];
   const Our_Services = [
     { name: "Laptop Repairing", path: "/laptop-repair" },
-    { name: "Data Recovery", path: "/" },
-    { name: "Laptop/Desktop Refurbished", path: "/" },
-    { name: "Apple Device Repairing", path: "/" },
-    { name: "Projector Repairing", path: "/" },
-    { name: "Printer Repairing", path: "/" },
+    { name: "Data Recovery", path: "/Datarecover-service" }, 
+    // { name: "Laptop/Desktop Refurbished", path: "/" },
+    { name: "Apple Device Repairing", path: "/Apple-laptop-service" },
+    { name: "Projector Repairing", path: "/Projectors-laptop-service" },
+    { name: "Printer Repairing", path: "/Printer-service" },
   ]
   const Our_Locations =[
     {name:"Bhubaneswar",path:"/"},

@@ -10,7 +10,11 @@ const LenovoLaptopService = () => {
           name="description"
           content="Facing issues with your Lenovo laptop? Visit Numlock IT Solutions – Bhubaneswar’s top-rated Lenovo Laptop Service Center offering expert repairs, genuine parts, and fast turnaround."
         />
-        <link
+         <meta
+          name="keywords"
+          content="Lenovo Laptop Service Center Bhubaneswar, Lenovo laptop repair near me, Lenovo screen replacement, Lenovo motherboard repair, Numlock IT Solutions"
+        />
+        {/* <link
           rel="canonical"
           href="https://www.numlockitsolutions.com/lenovo-laptop-service-center"
         />
@@ -45,7 +49,7 @@ const LenovoLaptopService = () => {
         <meta
           property="twitter:image"
           content="https://www.numlockitsolutions.com/images/lenovo-laptop-repair.jpg"
-        />
+        /> */}
       </Helmet>
 
       <h1 className="text-3xl font-bold mb-6 text-amber-700 text-center">

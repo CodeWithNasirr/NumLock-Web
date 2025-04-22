@@ -70,7 +70,7 @@ const FeaturedCourses = () => {
             </div>
             <h3 className="text-md font-semibold text-blue-600 hover:underline">
               <a href="">
-                Laptop With MacBook Advanced Chip Level Training
+                Laptop With HP Advanced Chip Level Training
               </a>
             </h3>
             <p className="text-gray-700 text-sm">
@@ -88,7 +88,7 @@ const FeaturedCourses = () => {
               </div>
             </div>
             <p className="text-gray-500 text-sm">
-              Learn the basics and advanced topics of Laptop with MacBook repairs.
+              Learn the basics and advanced topics of Laptop with HP repairs.
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const FeaturedCourses = () => {
             </div>
             <h3 className="text-md font-semibold text-blue-600 hover:underline">
               <a href="">
-                Laptop With MacBook Advanced Chip Level Training
+                Laptop With DELL Advanced Chip Level Training
               </a>
             </h3>
             <p className="text-gray-700 text-sm">
@@ -127,7 +127,7 @@ const FeaturedCourses = () => {
               </div>
             </div>
             <p className="text-gray-500 text-sm">
-              Learn the basics and advanced topics of Laptop with MacBook repairs.
+              Learn the basics and advanced topics of Laptop with Dell repairs.
             </p>
           </div>
         </div>

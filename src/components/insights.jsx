@@ -19,20 +19,21 @@ const OurInsights = () => {
     assest.microsoft,
     assest.motorola,
     assest.msi,
-    assest.oppo,
-    assest.Realme,
+    // assest.oppo,
+    // assest.Realme,
     assest.samsung,
     assest.toshiba,
-    assest.vivo,
+    // assest.vivo,
     assest.avita,
     assest.iball,
-    assest.MI,
-    assest.oneplus,
-    assest.poco,
-    assest.honor,
-    assest.nokia,
-    assest.infinix,
-    assest.nothing,];
+    // assest.MI,
+    // assest.oneplus,
+    // assest.poco,
+    // assest.honor,
+    // assest.nokia,
+    // assest.infinix,
+    // assest.nothing,
+  ];
 
   return (
     <section className="py-16 px-6 bg-gray-100 text-center">

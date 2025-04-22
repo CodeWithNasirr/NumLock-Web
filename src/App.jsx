@@ -12,12 +12,20 @@ import WhyChoose from './pages/Why';
 import ContactUs from './pages/contact';
 import ScrollToTop from './components/ScrollToTop';
 import PrivacyPolicy from './pages/Policy';
-import DellLaptopService from './brand_pages/DellLaptopService';
 import LaptopServiceCenter from './pages/LaptopServiceCenter';
+// brand pages here
+import DellLaptopService from './brand_pages/DellLaptopService';
 import HpLaptopServiceCenter from './brand_pages/HpLaptopServiceCenter';
 import LenovoLaptopService from './brand_pages/LenovoLaptopService';
 import AppleLaptopService from './brand_pages/AppleLaptopService';
 import AcerLaptopService from './brand_pages/AcerLaptopService';
+import AssusLaptopService from './brand_pages/AssusLaptopService';
+import ProjectorService from './brand_pages/ProjectorService';
+import SamsungLaptopService from './brand_pages/SamsungLaptopService';
+import TosibaLaptopService from './brand_pages/TosibaLaptopService';
+import PrinterService from './brand_pages/PrinterService';
+import DataRecoveryService from './brand_pages/DataRecoveryService';
+
 const App = () => {
   return (
     <div className='relative md:px-[7vw] lg:px-[9vw]'>
@@ -39,6 +47,13 @@ const App = () => {
       <Route path='/Lenovo-laptop-service' element={<LenovoLaptopService/>}/>
       <Route path='/Apple-laptop-service' element={<AppleLaptopService/>}/>
       <Route path='/Acer-laptop-service' element={<AcerLaptopService/>}/>
+      <Route path='/Assus-laptop-service' element={<AssusLaptopService/>}/>
+      <Route path='/Samsung-laptop-service' element={<SamsungLaptopService/>}/>
+      <Route path='/Toshiba-laptop-service' element={<TosibaLaptopService/>}/>
+      <Route path='/Projectors-laptop-service' element={<ProjectorService/>}/>
+      <Route path='/Printer-service' element={<PrinterService/>}/>
+      <Route path='/Datarecover-service' element={<DataRecoveryService/>}/>
+    
 
 
 

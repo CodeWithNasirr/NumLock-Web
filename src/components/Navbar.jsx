@@ -40,7 +40,7 @@ const Navbar = () => {
             <p>SUPPORT</p>
             <FaWhatsapp size={20} color="green"/>
             </NavLink>
-            <NavLink to={"/login"} className="rounded-full bg-indigo-600 hover:bg-indigo-500 px-8 py-2 text-white shadow-sm">Login</NavLink>
+            {/* <NavLink to={"/login"} className="rounded-full bg-indigo-600 hover:bg-indigo-500 px-8 py-2 text-white shadow-sm">Login</NavLink> */}
             </div>
 
           
@@ -91,9 +91,9 @@ const Navbar = () => {
                     <FaWhatsapp size={20} color="green"/>
 
                 </NavLink>
-                <NavLink to="/Login" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                {/* <NavLink to="/Login" className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>LOGIN</p>
-                </NavLink>
+                </NavLink> */}
                 </div>
             </div>
         </div>

@@ -15,6 +15,19 @@ sitemap.pipe(writeStream);
   '/Why',
   '/contact',
   '/privacy-policy',
+  '/laptop-repair',
+  '/Dell-laptop-service',
+  '/Hp-laptop-service',
+  '/Lenovo-laptop-service',
+  '/Apple-laptop-service',
+  '/Acer-laptop-service',
+  '/privacy-policy',
+  '/Samsung-laptop-service',
+  '/Samsung-laptop-service',
+  '/Samsung-laptop-service',
+  '/Toshiba-laptop-service',
+  '/Printer-service',
+  '/Datarecover-service',
 ].forEach(url => sitemap.write({ url }));
 
 sitemap.end();

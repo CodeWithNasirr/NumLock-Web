@@ -11,10 +11,10 @@ const LaptopServiceCenter = () => {
     {name:"Lenovo",path:"/Lenovo-laptop-service"},
     {name:"Apple",path:"/Apple-laptop-service"},
     {name:"Acer",path:"/Acer-laptop-service"},
-    {name:"Asus",path:""},
-    {name:"Samsung",path:""},
-    {name:"Toshiba",path:""},
-    {name:"Projectors",path:""},
+    {name:"Asus",path:"/Assus-laptop-service"},
+    {name:"Samsung",path:"/Samsung-laptop-service"},
+    {name:"Toshiba",path:"/Toshiba-laptop-service"},
+    {name:"Projectors",path:"/Projectors-laptop-service"},
 
   ]
 
@@ -67,11 +67,11 @@ const LaptopServiceCenter = () => {
           </tbody>
         </table>
 
-        <img
+        {/* <img
           src="/images/large/laptop-repair.png"
           alt="laptop-repair"
           className="w-full rounded-lg my-6"
-        />
+        /> */}
 
         <p>
           <strong>Numlock IT Solutions</strong> is one of Bhubaneswar’s most trusted

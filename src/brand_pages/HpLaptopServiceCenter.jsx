@@ -9,7 +9,11 @@ const HPLaptopService = () => {
             name="description"
             content="Need professional HP laptop repair in Bhubaneswar? Visit Numlock IT Solutions for quick service, genuine HP parts, and expert technicians."
         />
-        <link rel="canonical" href="https://www.numlockitsolutions.com/hp-laptop-service-center" />
+        <meta
+          name="keywords"
+          content="HP Laptop Service Center Bhubaneswar, HP laptop repair near me, HP screen replacement, HP motherboard repair, Numlock IT Solutions"
+        />
+        {/* <link rel="canonical" href="https://www.numlockitsolutions.com/hp-laptop-service-center" />
 
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.numlockitsolutions.com/hp-laptop-service-center" />
@@ -20,7 +24,7 @@ const HPLaptopService = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="HP Laptop Service Center in Bhubaneswar" />
         <meta property="twitter:description" content="Professional HP laptop repair in Bhubaneswar. Expert service, affordable prices, and quick turnaround." />
-        <meta property="twitter:image" content="https://www.numlockitsolutions.com/images/hp-laptop-service.jpg" />
+        <meta property="twitter:image" content="https://www.numlockitsolutions.com/images/hp-laptop-service.jpg" /> */}
         </Helmet>
       <div className="max-w-5xl mx-auto">
         <div className=" p-6 rounded-2xl shadow-md mb-8">
@@ -61,13 +65,13 @@ const HPLaptopService = () => {
             We understand the urgency when your device fails, and our goal is to bring it back to life with the utmost care and professionalism. With our strong presence in Bhubaneswar and a solid customer satisfaction record, Numlock IT Solutions is your go-to destination for <strong>HP laptop repair near me</strong>.
           </p>
 
-          <div className="mt-8 text-center">
+          {/* <div className="mt-8 text-center">
             <img
               src="/images/large/hp-laptop-repair.png"
               alt="HP Laptop Repair in Bhubaneswar"
               className="rounded-xl mx-auto w-full md:w-3/4"
             />
-          </div>
+          </div> */}
 
           <p className="mt-6">
             Visit our HP Service Center at Saheed Nagar, Bhubaneswar, or call us to schedule a free diagnosis. Experience reliable and fast laptop repairs with a customer-first approach.
