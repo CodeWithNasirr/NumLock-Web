@@ -21,13 +21,13 @@ sitemap.pipe(writeStream);
   '/Lenovo-laptop-service',
   '/Apple-laptop-service',
   '/Acer-laptop-service',
+  '/Assus-laptop-service',
   '/privacy-policy',
-  '/Samsung-laptop-service',
-  '/Samsung-laptop-service',
   '/Samsung-laptop-service',
   '/Toshiba-laptop-service',
   '/Printer-service',
   '/Datarecover-service',
+  '/Projectors-laptop-service',
 ].forEach(url => sitemap.write({ url }));
 
 sitemap.end();
