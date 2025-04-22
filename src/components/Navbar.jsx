@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className='flex sticky top-0 z-50 items-center justify-between py-5 font-medium bg-zinc-50  border border-gray-100'>
-            <img src={assest.Numlock} alt="logo" className="w-40 mb-3 px-2" />
+            <img src={assest.logo} alt="logo" className="w-40 mb-3 px-5" />
             {/* <Link to='/' className="prata-regular text:1xl sm:py-3 px-5 leading-relaxed text-amber-700">NUMLOCKITSOLUTIONS</Link> */}
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
                 <NavLink to="/home" className='flex flex-col items-center gap-1'>

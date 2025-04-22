@@ -12,6 +12,7 @@ import projector from './projector.png'
 
 // Brand logo
 import Numlock from "./Numlock.png"
+import logo from "./logo.png"
 import numlock1 from "./numlock1.png"
 import acer from "./Brand-Logo/acer.png"
 import apple from "./Brand-Logo/apple.png"
@@ -41,6 +42,7 @@ import nothing from "./Brand-Logo/nothing.png"
 import repair_img from "./repair_img.jpeg"
 
 export const assest={
+    logo,
     numlock1,
     Numlock,
     repair_img,
