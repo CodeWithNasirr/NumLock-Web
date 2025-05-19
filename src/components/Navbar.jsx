@@ -82,6 +82,9 @@ const Navbar = () => {
                 <NavLink to='/Faq' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>FAQ</p>
                 </NavLink>
+                <NavLink to='/refurbished' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                    <p>REFURBISHED LAPTOPS</p>
+                </NavLink>
                 <NavLink to='/contact' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
                     <p>CONTACT US</p>
                   
