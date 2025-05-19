@@ -1,18 +1,18 @@
 import {React,useState,useEffect,useContext} from "react";
 import { motion } from "framer-motion";
 import { assest } from "../assets/assets";
-import { Context } from "../context/Context";
+import { ShopContext } from "../context/ShopContext";
 import Modal from "./Modal";
-const devices = [
+const devices = [ 
   { name: "Mac Repair", img: `${assest.mac}` },
   { name: "Laptop Repair", img: `${assest.Laptop}` },
-  { name: "iPhone/iPad", img: `${assest.iphone}` },
+  // { name: "iPhone/iPad", img: `${assest.iphone}` },
   { name: "Projector Repair", img: `${assest.projector}` },
-  { name: "Tablet Repair", img: `${assest.tab_repair}` },
+  // { name: "Tablet Repair", img: `${assest.tab_repair}` },
   { name: "Desktop Repair", img: `${assest.repair_laptop}` },
   { name: "Laptop Motherboard", img: `${assest.motherboard}` },
   { name: "Data Recovery", img: `${assest.data_recovery}` },
-  { name: "Mobile Repair", img:`${assest.phone_repair}` },
+  // { name: "Mobile Repair", img:`${assest.phone_repair}` },
   { name: "Printer Repair", img: `${assest.printer}` },
 //   { name: "Apple Watch", img: "images/devices/11.png" },
 //   { name: "Apple AirPods", img: "images/devices/11.png" },
@@ -28,20 +28,20 @@ const brands = [
     { name: "Microsoft", img:`${assest.microsoft}` },
     { name: "Toshiba", img: `${assest.toshiba}` },
     { name: "Samsung", img: `${assest.samsung}` },
-    { name: "Google", img: `${assest.google}` },
-    { name: "Realme", img: `${assest.Realme}` },
-    { name: "Oppo", img: `${assest.oppo}` },
-    { name: "Vivo", img: `${assest.vivo}` },
-    { name: "Motorola", img: `${assest.motorola}` },
-    { name: "Avita", img: `${assest.avita}` },
+    // { name: "Google", img: `${assest.google}` },
+    // { name: "Realme", img: `${assest.Realme}` },
+    // { name: "Oppo", img: `${assest.oppo}` },
+    // { name: "Vivo", img: `${assest.vivo}` },
+    // { name: "Motorola", img: `${assest.motorola}` },
+    // { name: "Avita", img: `${assest.avita}` },
   { name: "iBall", img: `${assest.iball}` },
-  { name: "Mi", img: `${assest.MI}` },
-  { name: "OnePlus", img: `${assest.oneplus}` },
-  { name: "Poco", img: `${assest.poco}` },
-  { name: "Honor", img: `${assest.honor}` },
-  { name: "Nokia", img: `${assest.nokia}` },
-  { name: "INFINIX", img: `${assest.infinix}` },
-  { name: "NOTHING", img: `${assest.nothing}`},
+  // { name: "Mi", img: `${assest.MI}` },
+  // { name: "OnePlus", img: `${assest.oneplus}` },
+  // { name: "Poco", img: `${assest.poco}` },
+  // { name: "Honor", img: `${assest.honor}` },
+  // { name: "Nokia", img: `${assest.nokia}` },
+  // { name: "INFINIX", img: `${assest.infinix}` },
+  // { name: "NOTHING", img: `${assest.nothing}`},
 ];
 
 
@@ -70,7 +70,7 @@ const BrandBox = ({ brand,onSelectBrand }) => (
 );
 
 const Hero = () => {
-  const {visible,setVisble} = useContext(Context);
+  const {visible,setVisble} = useContext(ShopContext);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedDevice, setSelectedDevice] = useState("");
   const [selectedBrand, setSelectedBrand] = useState("");
@@ -105,7 +105,7 @@ const Hero = () => {
         className="uppercase text-[5vw] tracking-tight pr-10 prata-regular leading-none text-amber-700"
       >
         Welcome to Odisha's No.1 Repair Center
-      </motion.h1>
+      </motion.h1> 
     </div>
 
         {/* Book by Device */}

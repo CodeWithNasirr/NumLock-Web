@@ -41,7 +41,14 @@ import nothing from "./Brand-Logo/nothing.png"
 // custom img
 import repair_img from "./repair_img.jpeg"
 
+// Cart Service
+import dropdown_icon from './dropdown_icon.png'
+import star_dull_icon from './star_dull_icon.png'
+import star_icon from './star_icon.png'
 export const assest={
+    star_dull_icon,
+    star_icon,
+    dropdown_icon,
     logo,
     numlock1,
     Numlock,

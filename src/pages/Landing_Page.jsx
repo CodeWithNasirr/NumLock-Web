@@ -29,7 +29,7 @@ function Landing_Page() {
       </Helmet>
       <Slider/>
       <FeaturedCourses/>
-      {/* <Hero/> */}
+      <Hero/>
       <RepairGadgets/>
       <WhyChooseUs/>
       <Testimonials/> 

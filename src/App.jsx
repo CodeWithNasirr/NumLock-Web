@@ -1,10 +1,9 @@
-// import { toast } from 'react-toastify'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import React from 'react'
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify';
 import Landing_Page from './pages/Landing_Page';
-import 'react-toastify/dist/ReactToastify.css';
 import AboutUs from './pages/About';
 import FAQAccordion from './pages/FAQ';
 import Footer from './components/footer';
@@ -25,6 +24,10 @@ import SamsungLaptopService from './brand_pages/SamsungLaptopService';
 import TosibaLaptopService from './brand_pages/TosibaLaptopService';
 import PrinterService from './brand_pages/PrinterService';
 import DataRecoveryService from './brand_pages/DataRecoveryService';
+// E_CART AREA
+import Collection from './pages/Collection';
+import Product from './pages/Product';
+
 
 const App = () => {
   return (
@@ -50,13 +53,12 @@ const App = () => {
       <Route path='/Assus-laptop-service' element={<AssusLaptopService/>}/>
       <Route path='/Samsung-laptop-service' element={<SamsungLaptopService/>}/>
       <Route path='/Toshiba-laptop-service' element={<TosibaLaptopService/>}/>
-      <Route path='/Projectors-laptop-service' element={<ProjectorService/>}/>
+      <Route path='/Projectors-laptop-service' element={<ProjectorService/>}/>  
       <Route path='/Printer-service' element={<PrinterService/>}/>
       <Route path='/Datarecover-service' element={<DataRecoveryService/>}/>
-    
-
-
-
+      {/* E-cart sevice */}
+      <Route path='/refurbished' element={<Collection />} />
+      <Route path='/product/:productId' element={<Product />} />
       </Routes>
       <Footer/>      
     </div>

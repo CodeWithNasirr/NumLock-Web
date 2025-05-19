@@ -9,7 +9,7 @@ const ContextProvider = (props) => {
     const value = {
       visible,setVisble 
     }
-
+  
     return (
         <Context.Provider value={value}>
             {props.children}

@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="bg-zinc-50 text-gray-800 py-8 relative">
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.link/akoflv"
+        href="https://wa.link/nub0g7"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"

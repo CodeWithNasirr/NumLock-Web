@@ -2,12 +2,12 @@ import { useState,useContext } from "react";
 import { FaBars, FaTimes, FaWhatsapp  } from "react-icons/fa";
 import { ChevronLeft} from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom'
-import { Context } from "../context/Context";
+import { ShopContext } from "../context/ShopContext";
 import { assest } from "../assets/assets";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const {visible,setVisble} = useContext(Context);
+  const {visible,setVisble} = useContext(ShopContext);
 
     return (
         <div className='flex sticky top-0 z-50 items-center justify-between py-5 font-medium bg-zinc-50  border border-gray-100'>
@@ -30,26 +30,26 @@ const Navbar = () => {
                     <p>FAQ</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
+                <NavLink to='/refurbished' className='flex flex-col items-center gap-1'>
+                    <p>REFURBISHED LAPTOPS</p>
+                    <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+                </NavLink>
                 <NavLink to='/contact' className='flex flex-col items-center gap-1'>
                     <p>CONTACT US</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
             </ul>
             <div className="right hidden sm:flex flex-row gap-3">
-            <NavLink to='https://wa.link/akoflv' className="hidden sm:flex flex-row gap-1 hover:bg-green-500 hover:text-white border px-5 py-2 rounded-full">
+            <NavLink to='https://wa.link/nub0g7' className="hidden sm:flex flex-row gap-1 hover:bg-green-500 hover:text-white border px-5 py-2 rounded-full">
             <p>SUPPORT</p>
             <FaWhatsapp size={20} color="green"/>
             </NavLink>
             {/* <NavLink to={"/login"} className="rounded-full bg-indigo-600 hover:bg-indigo-500 px-8 py-2 text-white shadow-sm">Login</NavLink> */}
             </div>
 
-          
-            
-
             <div className='flex items-center gap-6'>
                 <div className='group relative'>
                     {/* Dropdown Menu */}
-
                 </div>
                 <button
                     className="sm:hidden text-xl px-5"
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <p>CONTACT US</p>
                   
                 </NavLink>
-                <NavLink to='https://wa.link/akoflv' className="flex flex-row items-center justify-center gap-1" onClick={() => setVisble(false)}>
+                <NavLink to='https://wa.link/nub0g7' className="flex flex-row items-center justify-center gap-1" onClick={() => setVisble(false)}>
                     <p>SUPPORT</p>
                     <FaWhatsapp size={20} color="green"/>
 

@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Context } from "../context/Context";
+import { ShopContext } from "../context/ShopContext";
 const slides = [
     {
       heading: "Happy Holi!",
@@ -26,7 +26,7 @@ const slides = [
     },
   ];
 const Slider = () => {
-    const {visible,setVisble} = useContext(Context);
+    const {visible,setVisble} = useContext(ShopContext);
   return (
     <div className=" bg-gray-200 p-6 shadow-lg border border-gray-400">
       {/* Left Empty Div for Styling Purposes */}
