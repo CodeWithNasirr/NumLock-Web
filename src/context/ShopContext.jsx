@@ -3,12 +3,12 @@ import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import { toast } from "react-toastify";
 import axios from "axios";
+import API_BASE_URL from "../../config";
 
-
-export const ShopContext = createContext(); 
+export const ShopContext = createContext();  
    
 const ShopContextProvider = (props) => {
-    const baseURL = "http://127.0.0.1:8000"; // Define your base URL
+    const baseURL = API_BASE_URL; // Define your base URL
     const [products, setProducts] = useState([]);
     const currency = '₹'; 
     const delivery_fee = 10;
@@ -20,7 +20,7 @@ const ShopContextProvider = (props) => {
 
     // Fetch products from API
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/api/product/")
+        axios.get(`${API_BASE_URL}/api/product/`)
             .then((response) => {
                 setProducts(response.data.data); 
             })
