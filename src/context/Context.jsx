@@ -7,7 +7,7 @@ const ContextProvider = (props) => {
     const [visible,setVisble]=useState(false)
 
     const value = {
-      visible,setVisble 
+      visible,setVisble  
     }
   
     return (

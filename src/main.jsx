@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <ShopContextProvider>
   <HelmetProvider>
-      <App />
+      <App /> 
     </HelmetProvider>
   </ShopContextProvider>
   </BrowserRouter>
