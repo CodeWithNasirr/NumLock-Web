@@ -3,10 +3,10 @@ import Title from '../components/Title'
 import ProductItem from '../components/ProductItem'
 import { ShopContext } from '../context/ShopContext'
 import { assest } from '../assets/assets'
-
+import SkeletonProduct from '../components/SkeletonProduct'
 const Collection = () => {
 
-  const {search,products, showSearch } = useContext(ShopContext);
+  const {search,products, showSearch,isLoading } = useContext(ShopContext);
   // console.log(products)
   
   const [filterProducts, setFilterProducts] = useState([]);
@@ -14,6 +14,7 @@ const Collection = () => {
   const [subCategory, setSubCategory] = useState([]);
   const [showFilter, setShowFilter] = useState(false);
   const [sortType, setSortType] = useState('relavent')
+  
 
   const toggleCategory = (e) => {
     if (category.includes(e.target.value)){
@@ -136,12 +137,28 @@ const Collection = () => {
 
         {/* Map Products */}
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
-          {
-            filterProducts.map((item, index) => (
-              <ProductItem key={index} id={item.product_id} image={item.images} name={item.name} price={item.price} />
+          {isLoading ? (
+            // Show skeleton loaders while loading
+            Array(8).fill(0).map((_, index) => (
+              <SkeletonProduct key={index} />
             ))
-          }
+          ) : filterProducts.length > 0 ? (
+            filterProducts.map((item, index) => (
+              <ProductItem 
+                key={index} 
+                id={item.product_id} 
+                image={item.images} 
+                name={item.name} 
+                price={item.price} 
+              />
+            ))
+          ) : (
+            <div className="col-span-full text-center py-10">
+              <p>No products found matching your criteria</p>
+            </div>
+          )}
         </div>
+
       </div>
     </div>
   )

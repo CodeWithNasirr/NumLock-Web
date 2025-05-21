@@ -17,16 +17,43 @@ const ShopContextProvider = (props) => {
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
     const [visible,setVisble]=useState(false)
+    const [isLoading, setIsLoading] = useState(true);
 
-    // Fetch products from API
+    // Fetch products from API with loading state
     useEffect(() => {
-        axios.get(`${API_BASE_URL}/api/product/`)
-            .then((response) => {
-                setProducts(response.data.data); 
-            })
-            .catch((error) => {
-                alert(error.response?.data || "Error fetching products");
-            });
+        const fetchProducts = async () => {
+            setIsLoading(true);
+            try {
+                const response = await axios.get(`${API_BASE_URL}/api/product/`);
+                setProducts(response.data.data);
+                // Cache products in localStorage
+                localStorage.setItem('cachedProducts', JSON.stringify(response.data.data));
+                localStorage.setItem('cacheTimestamp', Date.now());
+            } catch (error) {
+                setError(error.response?.data || "Error fetching products");
+                // Try to load from cache if available
+                const cachedProducts = localStorage.getItem('cachedProducts');
+                if (cachedProducts) {
+                    setProducts(JSON.parse(cachedProducts));
+                }
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        // Check if we have recent cached data (less than 1 hour old)
+        const cacheTimestamp = localStorage.getItem('cacheTimestamp');
+        const cachedProducts = localStorage.getItem('cachedProducts');
+        
+        if (cachedProducts && cacheTimestamp && (Date.now() - parseInt(cacheTimestamp) < 3600000)) {
+            setProducts(JSON.parse(cachedProducts));
+            setIsLoading(false);
+            // Still fetch fresh data in background
+            fetchProducts();
+        }
+         else {
+            fetchProducts();
+        }
     }, []);
 
     const addToCart = async (itemId, size) => {
@@ -94,6 +121,7 @@ const ShopContextProvider = (props) => {
     }
 
     const value = {
+        isLoading,
         visible,setVisble, 
         currency, delivery_fee,
         products,
