@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams,Link } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import { assest } from '../assets/assets'
-
+import axios from 'axios';
 import RelatedProducts from '../components/RelatedProducts';
  
 const Product = () => {
@@ -34,6 +34,54 @@ const Product = () => {
   useEffect(() => {
     fetchProductData() 
   }, [productId])
+  const handlePayOnline = async () => {
+    try {
+      // Create order on backend
+      const response = await axios.post(`${baseURL}/api/create-order/`, {
+        product_id: productData.product_id,
+      });
+
+      const { order_id, amount, currency, key } = response.data;
+
+
+        const options = {
+          key: key,
+          amount: amount,
+          currency: currency,
+          name: 'Numlock IT Solutions',
+          description: `Payment for ${productData.name}`,
+          order_id: order_id,
+          image: 'https://your-logo-url.com/logo.png', // Add your logo URL
+          handler: async function (response) {
+            try {
+              // Verify payment on backend
+              const verifyResponse = await axios.post(`${baseURL}/api/verify-payment/`, {
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_signature: response.razorpay_signature,
+              });
+              alert('Payment successful!');
+              // Redirect or update UI
+            } catch (err) {
+              console.error('Payment verification failed:', err);
+              alert('Payment verification failed. Please contact support.');
+            }
+          },
+          prefill: {
+            email: "skofficial665@gmail.com",
+            contact: '1234567890', // Replace with dynamic phone number
+          },
+          theme: {
+            color: '#1f56d0',
+          },
+        };
+        const paymentObject = new window.Razorpay(options);
+        paymentObject.open();
+    } catch (error) {
+      console.error('Error creating order:', error);
+      alert('Failed to initiate payment. Please try again.');
+    }
+  };
 
   return productData ? (
     <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100 mx-4 sm:m-auto'>
@@ -71,7 +119,12 @@ const Product = () => {
           <Link to={"https://wa.link/nub0g7"} className='bg-green-600 rounded-full text-white px-8 py-3 text-sm active:bg-gray-700'>BUY NOW</Link>
           </div>
           
-          {/* <button onClick={() => addToCart(productData.product_id, size)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>ADD TO CART</button> */}
+           <button
+              onClick={handlePayOnline}
+              className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700"
+            >
+              Pay Online
+            </button>
 
           <hr className='mt-10 sm:w-4/5' />
 

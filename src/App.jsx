@@ -11,6 +11,9 @@ import WhyChoose from './pages/Why';
 import ContactUs from './pages/contact';
 import ScrollToTop from './components/ScrollToTop';
 import PrivacyPolicy from './pages/Policy';
+import CancellationAndRefund from './pages/CancellationAndRefund';
+import ShippingAndDelivery from './pages/ShippingAndDelivery';
+import TermsAndConditions from './pages/TermsAndConditions';
 import LaptopServiceCenter from './pages/LaptopServiceCenter';
 // brand pages here
 import DellLaptopService from './brand_pages/DellLaptopService';
@@ -43,6 +46,9 @@ const App = () => {
       <Route path='/Why' element={<WhyChoose/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+      <Route path='/refund-policy' element={<CancellationAndRefund/>}/>
+      <Route path='/shipping-policy' element={<ShippingAndDelivery/>}/>
+      <Route path='/terms-policy' element={<TermsAndConditions/>}/>
       <Route path='/laptop-repair' element={<LaptopServiceCenter/>}/>
       {/* laptop services... here */}
       <Route path='/Dell-laptop-service' element={<DellLaptopService/>}/>

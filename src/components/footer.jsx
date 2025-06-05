@@ -6,10 +6,10 @@ import { assest } from "../assets/assets";
 
 const Footer = () => {
   const  Useful_Links = [
-    { name: "Home", path: "/home" },
-    { name: "About us", path: "/about" },
     { name: "Contact us", path: "/contact" },
-    { name: "FAQ", path: "/Faq" },
+    { name: "Terms & Conditions", path: "/terms-policy" },
+    { name: "cancellation & refund", path: "/refund-policy" },
+    { name: "shipping & delivery", path: "/shipping-policy" },
     { name: "Privacy Policy", path: "/privacy-policy" },
   ];
   const Our_Services = [
