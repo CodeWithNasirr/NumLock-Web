@@ -32,8 +32,8 @@ import Collection from './pages/Collection';
 import Product from './pages/Product';
 
 // Gptx
-import ZxFashion from './GPTX/zxfashion';
 
+import ZxFashion from './GPTX/ZxFashion';
 const App = () => {
   return (
     <div className='relative md:px-[7vw] lg:px-[9vw]'>
