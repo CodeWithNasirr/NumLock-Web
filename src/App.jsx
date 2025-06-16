@@ -31,6 +31,8 @@ import DataRecoveryService from './brand_pages/DataRecoveryService';
 import Collection from './pages/Collection';
 import Product from './pages/Product';
 
+// Gptx
+import ZxFashion from './GPTX/zxfashion';
 
 const App = () => {
   return (
@@ -48,7 +50,7 @@ const App = () => {
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='/refund-policy' element={<CancellationAndRefund/>}/>
       <Route path='/shipping-policy' element={<ShippingAndDelivery/>}/>
-      <Route path='/terms-policy' element={<TermsAndConditions/>}/>
+      <Route path='/terms-policy' element={<TermsAndConditions/>}/> 
       <Route path='/laptop-repair' element={<LaptopServiceCenter/>}/>
       {/* laptop services... here */}
       <Route path='/Dell-laptop-service' element={<DellLaptopService/>}/>
@@ -65,6 +67,9 @@ const App = () => {
       {/* E-cart sevice */}
       <Route path='/refurbished' element={<Collection />} />
       <Route path='/product/:productId' element={<Product />} />
+      {/* Gptx pages */}
+      <Route path='/zxfashion' element={<ZxFashion />} />
+
       </Routes>
       <Footer/>      
     </div>
