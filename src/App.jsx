@@ -32,7 +32,6 @@ import Collection from './pages/Collection';
 import Product from './pages/Product';
 
 // Gptx
-
 import ZxFashion from './GPTX/ZxFashion';
 const App = () => {
   return (
