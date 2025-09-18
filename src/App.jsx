@@ -31,8 +31,7 @@ import DataRecoveryService from './brand_pages/DataRecoveryService';
 import Collection from './pages/Collection';
 import Product from './pages/Product';
 
-// Gptx
-import ZxFashion from './GPTX/ZxFashion';
+
 const App = () => {
   return (
     <div className='relative md:px-[7vw] lg:px-[9vw]'>
@@ -67,7 +66,6 @@ const App = () => {
       <Route path='/refurbished' element={<Collection />} />
       <Route path='/product/:productId' element={<Product />} />
       {/* Gptx pages */}
-      <Route path='/zxfashion' element={<ZxFashion />} />
 
       </Routes>
       <Footer/>      

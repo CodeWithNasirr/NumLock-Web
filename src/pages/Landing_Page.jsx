@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from '../components/slider';
-import Hero from '../components/Hero';
+// import Hero from '../components/Hero';
+import ProfessionalHero from '../components/Hero';
 import RepairGadgets from '../components/steps';
 import WhyChooseUs from '../components/Trust_Us';
 import OurInsights from '../components/insights';
@@ -8,7 +9,9 @@ import ExclusiveStores from '../components/stores';
 import Testimonials from '../components/testimonials';
 import { Helmet } from 'react-helmet-async'
 import SEOAccordion from './SeoAordion';
-import FeaturedCourses from '../components/FeaturedCourses';
+// import FeaturedCourses from '../components/FeaturedCourses';
+import ProfessionalFeaturedCourses from '../components/FeaturedCourses';
+import ServiceCenterSection from '../components/ServiceCenterSection';
 function Landing_Page() {
   return (
     <div>
@@ -28,10 +31,11 @@ function Landing_Page() {
         <meta name="twitter:image" content="https://numlockitsolutions.co.in/numlock1.png" />
       </Helmet>
       <Slider/>
-      <FeaturedCourses/>
-      <Hero/>
+      <ProfessionalHero/>
+      <ProfessionalFeaturedCourses/>
       <RepairGadgets/>
       <WhyChooseUs/>
+      <ServiceCenterSection/>
       <Testimonials/> 
       <OurInsights/>
       <ExclusiveStores/>

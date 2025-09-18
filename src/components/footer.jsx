@@ -49,18 +49,18 @@ const Footer = () => {
           <p><strong>Alt Mobile:</strong> +91 9439940725 </p>
           <p><strong>Email:</strong>support@numlockitsolutions.co.in</p>
           <div className="flex space-x-4 mt-4">
-            <Link to="" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.facebook.com/share/173ze8c8n9/" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={20} className="hover:text-blue-500 transition duration-300" />
             </Link> 
-            <Link to="" target="_blank" rel="noopener noreferrer">
+            <Link to="https://youtube.com/@numlockitsolutions?si=7kr1sVjzpTwk3mYT" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={20} className="hover:text-red-500 transition duration-300" />
             </Link>
-            <Link to="" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.instagram.com/numlockitsolution?igsh=MTFlZm95NHR2emQxbA==" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={20} className="hover:text-pink-500 transition duration-300" />
             </Link>
-            <Link to="" target="_blank" rel="noopener noreferrer">
+            {/* <Link to="" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={20} className="hover:text-blue-400 transition duration-300" />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
