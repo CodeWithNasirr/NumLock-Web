@@ -1,9 +1,11 @@
 const ServiceCenterSection = () => {
   const images = [
-    "/images/setup1.jpg",
-    "/images/setup2.jpg",
-    "/images/setup3.jpg",
-    "/images/setup4.jpg",
+    "https://i.ibb.co/KzqB1vK6/20250919-153254-1.jpg",
+    "https://i.ibb.co/KcQRkyxq/20250919-153305-1.jpg",
+    "https://i.ibb.co/ZznHZ000/20250919-153336-1.jpg",
+    "https://i.ibb.co/RGG89Vfc/20250919-153354-1.jpg",
+    "https://i.ibb.co/DfFGPCfW/20250919-153313.jpg",
+    "https://i.ibb.co/5pD6n3C/20250919-153239.jpg",
   ];
 
   return (

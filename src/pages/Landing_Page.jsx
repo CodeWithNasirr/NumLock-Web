@@ -33,12 +33,12 @@ function Landing_Page() {
       <Slider/>
       <ProfessionalHero/>
       <ProfessionalFeaturedCourses/>
-      <RepairGadgets/>
-      <WhyChooseUs/>
+      {/* <RepairGadgets/> */}
+      {/* <WhyChooseUs/> */}
       <ServiceCenterSection/>
       <Testimonials/> 
       <OurInsights/>
-      <ExclusiveStores/>
+      {/* <ExclusiveStores/> */}
       
     </div>
   )
