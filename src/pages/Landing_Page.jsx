@@ -7,6 +7,7 @@ import WhyChooseUs from '../components/Trust_Us';
 import OurInsights from '../components/insights';
 import ExclusiveStores from '../components/stores';
 import Testimonials from '../components/testimonials';
+import IntroductionPage from '../components/IntroductionPage';
 import { Helmet } from 'react-helmet-async'
 import SEOAccordion from './SeoAordion';
 // import FeaturedCourses from '../components/FeaturedCourses';
@@ -30,6 +31,7 @@ function Landing_Page() {
         <meta name="twitter:description" content="Professional laptop repair services you can trust. Book today!" />
         <meta name="twitter:image" content="https://numlockitsolutions.co.in/numlock1.png" />
       </Helmet>
+      <IntroductionPage/>
       <Slider/>
       <ProfessionalHero/>
       <ProfessionalFeaturedCourses/>
