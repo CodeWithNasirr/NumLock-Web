@@ -6,7 +6,7 @@ const IntroVideo = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const toggleMute = () => {
-    if (videoRef.current) {
+    if (videoRef.current) { 
       videoRef.current.muted = !isMuted;
       setIsMuted(!isMuted);
     }

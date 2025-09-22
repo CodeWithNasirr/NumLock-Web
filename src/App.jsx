@@ -15,6 +15,7 @@ import CancellationAndRefund from './pages/CancellationAndRefund';
 import ShippingAndDelivery from './pages/ShippingAndDelivery';
 import TermsAndConditions from './pages/TermsAndConditions';
 import LaptopServiceCenter from './pages/LaptopServiceCenter';
+import Careers from './pages/Careers';
 // brand pages here
 import DellLaptopService from './brand_pages/DellLaptopService';
 import HpLaptopServiceCenter from './brand_pages/HpLaptopServiceCenter';
@@ -50,6 +51,7 @@ const App = () => {
       <Route path='/shipping-policy' element={<ShippingAndDelivery/>}/>
       <Route path='/terms-policy' element={<TermsAndConditions/>}/> 
       <Route path='/laptop-repair' element={<LaptopServiceCenter/>}/>
+      <Route path='/careers' element={<Careers/>}/>
       {/* laptop services... here */}
       <Route path='/Dell-laptop-service' element={<DellLaptopService/>}/>
       <Route path='/Hp-laptop-service' element={<HpLaptopServiceCenter/>}/>

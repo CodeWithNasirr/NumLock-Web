@@ -13,6 +13,9 @@ import SEOAccordion from './SeoAordion';
 // import FeaturedCourses from '../components/FeaturedCourses';
 import ProfessionalFeaturedCourses from '../components/FeaturedCourses';
 import ServiceCenterSection from '../components/ServiceCenterSection';
+import VideoTestimonials from '../components/VideoTestimonials';
+import TranningPage from '../components/TranningPage';
+import CareersCTA from '../components/CareersCTA';
 function Landing_Page() {
   return (
     <div>
@@ -34,11 +37,14 @@ function Landing_Page() {
       <IntroductionPage/>
       <Slider/>
       <ProfessionalHero/>
-      <ProfessionalFeaturedCourses/>
+      <CareersCTA/>
+      <TranningPage/>
+      {/* <ProfessionalFeaturedCourses/> */}
       {/* <RepairGadgets/> */}
       {/* <WhyChooseUs/> */}
       <ServiceCenterSection/>
       <Testimonials/> 
+      <VideoTestimonials/> 
       <OurInsights/>
       {/* <ExclusiveStores/> */}
       

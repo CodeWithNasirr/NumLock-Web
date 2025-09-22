@@ -12,16 +12,43 @@ const teamMembers = [
     role: "Engineers • Technicians",
     description:
       "Meet the passionate experts behind Numlock IT Solutions — a dedicated team of engineers, skilled technicians, and visionary co-founders working tirelessly to deliver reliable, high-quality laptop repair services. Their expertise and commitment power the heart of our company.",
-    img: "https://media.istockphoto.com/id/1188452509/photo/successful-business-team-smiling-teamwork-corporate-office-colleague.jpg?s=612x612&w=0&k=20&c=GZW2GARitWYX4Uez12Rs4kmwKEYDDhjgcr_PL2sUzO8="
+    img: "/images/Team.jpg"
   },
-
-  {
-    name: "Amit Verma",
-    role: "Lead Chip-Level Engineer",
+   {
+    name: "Somoyo",
+    role: "Founder & CEO • Numlock IT Solutions",
     description:
-      "Amit is our expert in advanced motherboard and chip-level repairs, solving complex hardware issues.",
-    img: "https://www.apple.com/careers/images/teams/related/hardware/desktop.jpg",
+      "Somoyo founded Numlock IT Solutions with a vision to provide professional, transparent, and reliable laptop repair services across Odisha. With strong leadership and customer-first values, he continues to guide the team toward innovation and growth.",
+    img: "/images/founder1.jpg"
   },
+  // {
+  //   name: "Amit Verma",
+  //   role: "Lead Chip-Level Engineer",
+  //   description:
+  //     "Amit is our expert in advanced motherboard and chip-level repairs, solving complex hardware issues.",
+  //   img: "https://www.apple.com/careers/images/teams/related/hardware/desktop.jpg",
+  // },
+  {
+    name: "Awards & Recognition",
+    role: "Excellence • Innovation",
+    description:
+      "Our team has been honored with multiple awards for outstanding service, innovation, and customer satisfaction in the laptop repair industry. These recognitions highlight our dedication to quality and trust.",
+    img: "/images/awards1.jpg"
+  },
+  {
+    name: "Awards & Recognition",
+    role: "Excellence • Innovation",
+    description:
+      "Our team has been honored with multiple awards for outstanding service, innovation, and customer satisfaction in the laptop repair industry. These recognitions highlight our dedication to quality and trust.",
+    img: "/images/awards2.jpg"
+  },
+  {
+    name: "Awards & Recognition",
+    role: "Excellence • Innovation",
+    description:
+      "Our team has been honored with multiple awards for outstanding service, innovation, and customer satisfaction in the laptop repair industry. These recognitions highlight our dedication to quality and trust.",
+    img: "/images/awards3.jpg"
+  }
  
 ];
 

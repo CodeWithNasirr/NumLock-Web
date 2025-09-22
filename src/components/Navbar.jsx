@@ -22,10 +22,14 @@ const Navbar = () => {
                     <p>ABOUT US</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
-                <NavLink to='/Why' className='flex flex-col items-center gap-1'>
-                    <p>WHY WE</p>
+                <NavLink to='/careers' className='flex flex-col items-center gap-1'>
+                    <p>Carrers/JOB</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
+                {/* <NavLink to='/Why' className='flex flex-col items-center gap-1'>
+                    <p>WHY WE</p>
+                    <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+                </NavLink> */}
                 <NavLink to='/Faq' className='flex flex-col items-center gap-1'>
                     <p>FAQ</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
@@ -75,8 +79,9 @@ const Navbar = () => {
                     <p>ABOUT US</p>
    
                 </NavLink>
-                <NavLink to='/Why' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
-                    <p>WHY WE</p>
+               
+                <NavLink to='/careers' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>
+                    <p>Carrers/JOB</p>
                    
                 </NavLink>
                 <NavLink to='/Faq' className='flex flex-col items-center gap-1' onClick={() => setVisble(false)}>

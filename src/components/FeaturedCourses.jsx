@@ -159,7 +159,8 @@ import {
   TrendingUp,
   Zap
 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 // Professional Featured Courses Component
 const ProfessionalFeaturedCourses = () => {
   const courses = [
@@ -279,15 +280,24 @@ const ProfessionalFeaturedCourses = () => {
                 </ul>
 
                 {/* Footer */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <div>
-                    <span className="text-2xl font-bold text-gray-900">{course.price}</span>
-                  </div>
-                  {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors flex items-center gap-2 group">
+                {/* <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 2 }}
+                    whileTap={{ scale: 0.95, rotate: -2 }}
+                    className="inline-block"
+                  >
+                    <Link
+                      to={""}
+                      className="text-2xl font-bold text-blue-600 cursor-pointer transition-colors duration-300 hover:text-blue-800"
+                    >
+                      {course.price}
+                    </Link>
+                  </motion.div>
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors flex items-center gap-2 group">
                     Learn More
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </button> */}
-                </div>
+                  </button>
+                </div> */}
               </div>
             </div>
           ))}

@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 const ServiceCenterSection = () => {
   const images = [
     "https://i.ibb.co/KzqB1vK6/20250919-153254-1.jpg",
@@ -8,10 +11,19 @@ const ServiceCenterSection = () => {
     "https://i.ibb.co/5pD6n3C/20250919-153239.jpg",
   ];
 
+  const [current, setCurrent] = useState(0);
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 text-gray-800 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
@@ -24,19 +36,48 @@ const ServiceCenterSection = () => {
           </p>
         </div>
 
-        {/* Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {images.map((src, index) => (
-            <div
+        {/* Slider */}
+        <div className="relative max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg">
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${current * 100}%)` }}
+          >
+            {images.map((src, index) => (
+              <div key={index} className="w-full flex-shrink-0">
+                <img
+                  src={src}
+                  alt={`Service Center ${index + 1}`}
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+
+        {/* Dots indicator */}
+        <div className="flex justify-center mt-4 space-x-2">
+          {images.map((_, index) => (
+            <button
               key={index}
-              className="overflow-hidden rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 bg-white"
-            >
-              <img
-                src={src}
-                alt={`Service Center ${index + 1}`}
-                className="w-full h-56 object-cover"
-              />
-            </div>
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full ${
+                current === index ? "bg-indigo-600" : "bg-gray-400"
+              }`}
+            ></button>
           ))}
         </div>
       </div>
