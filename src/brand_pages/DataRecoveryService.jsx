@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import { assest } from "../assets/assets";
 const DataRecoveryService = () => {
   return (
     <div className="container mx-auto px-4 py-10">
@@ -20,6 +20,18 @@ const DataRecoveryService = () => {
         <h1 className="text-3xl font-bold text-amber-700 text-center mb-4">
           Best Data Recovery Services in Bhubaneswar
         </h1>
+        <div className="relative w-full h-full md:h-full rounded-xl mb-6 shadow-lg">
+                        <img
+                          src={assest.banner_data_recovery} // replace with your banner path
+                          alt="Laptop Service Banner"
+                          className="w-full h-full object-cover"
+                        />
+                        {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                          <h1 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
+                            Laptop Service Center in Bhubaneswar, Near Me
+                          </h1>
+                        </div> */}
+                      </div>
 
         <p className="text-gray-700 mb-4">
           Lost your important files, documents, photos, or videos? Don’t panic. <strong>Numlock IT Solutions</strong> offers professional <strong>data recovery services in Bhubaneswar</strong> for laptops, desktops, hard drives, SSDs, pen drives, memory cards, and more.

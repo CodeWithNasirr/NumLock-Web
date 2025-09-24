@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import { assest } from "../assets/assets";
 const ProjectorService = () => {
   return (
     <div className="container mx-auto px-4 py-10">
@@ -20,6 +20,14 @@ const ProjectorService = () => {
         <h1 className="text-3xl font-bold text-amber-700 text-center mb-4">
           Projector Service Center in Bhubaneswar
         </h1>
+        {/* <div className="relative w-full h-full md:h-full rounded-xl mb-6 shadow-lg">
+          <img
+            src={assest.banner_data_recovery} // replace with your banner path
+            alt="Laptop Service Banner"
+            className="w-full h-full object-cover"
+          />
+        
+        </div> */}
 
         <p className="text-gray-700 mb-4">
           Searching for a reliable <strong>projector repair center in Bhubaneswar</strong>? At <strong>Numlock IT Solutions</strong>, we provide professional projector servicing for all leading brands including Epson, BenQ, Sony, Panasonic, LG, ViewSonic, and more. Whether your projector is used for business, education, home theatre, or events — we ensure expert diagnostics and quick turnaround time.

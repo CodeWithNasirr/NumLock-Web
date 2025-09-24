@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import { assest } from "../assets/assets";
 
 const LaptopServiceCenter = () => {
 
@@ -32,6 +32,20 @@ const LaptopServiceCenter = () => {
           Laptop Service Center in Bhubaneswar, Near Me
         </h2>
       </div>
+      {/* Hero Section */}
+      <div className="relative w-full h-full md:h-full rounded-xl mb-6 shadow-lg">
+        <img
+          src={assest.laptop_service_banner} // replace with your banner path
+          alt="Laptop Service Banner"
+          className="w-full h-full object-cover"
+        />
+        {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <h1 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
+            Laptop Service Center in Bhubaneswar, Near Me
+          </h1>
+        </div> */}
+      </div>
+
 
       <div className="space-y-4 text-gray-700">
         <p>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { assest } from "../assets/assets";
 
 const DellLaptopService = () => {
   return (
@@ -23,6 +24,18 @@ const DellLaptopService = () => {
         <p className="text-lg text-gray-600">
           Professional Dell Laptop Repairs | Certified Technicians | Affordable Pricing
         </p>
+              <div className="relative w-full h-full md:h-full rounded-xl mb-6 shadow-lg">
+                <img
+                  src={assest.dell_service} // replace with your banner path
+                  alt="Laptop Service Banner"
+                  className="w-full h-full object-cover"
+                />
+                {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                  <h1 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
+                    Laptop Service Center in Bhubaneswar, Near Me
+                  </h1>
+                </div> */}
+              </div>
       </section>
 
       <section className="space-y-6 text-gray-700">

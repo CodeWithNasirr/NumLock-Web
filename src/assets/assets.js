@@ -40,12 +40,18 @@ import infinix from "./Brand-Logo/infinix.png"
 import nothing from "./Brand-Logo/nothing.png"
 // custom img
 import repair_img from "./repair_img.jpeg"
+import laptop_service_banner from "./laptop_service_banner.png"
+import banner_data_recovery from "./banner_data_recovery.jpg"
+import dell_service from "./dell_service.png"
 
 // Cart Service
 import dropdown_icon from './dropdown_icon.png'
 import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
 export const assest={
+    banner_data_recovery,
+    laptop_service_banner,
+    dell_service,
     star_dull_icon,
     star_icon,
     dropdown_icon,
