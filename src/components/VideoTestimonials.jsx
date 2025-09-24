@@ -13,6 +13,12 @@ const videoTestimonials = [
     videoSrc: "https://www.youtube.com/embed/o733N2qawWE",
     feedback: "Numlock IT Solutions helped me fix my laptop quickly. Great service!",
   },
+  {
+    name: "Rohit Kumar",
+    role: "Small Business Owner",
+    videoSrc: "https://www.youtube.com/embed/oQaUR7Qy_tg",
+    feedback: "Numlock IT Solutions helped me fix my laptop quickly. Great service!",
+  },
 ];
 
 const VideoTestimonials = () => {
